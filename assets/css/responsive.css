@@ -67,6 +67,50 @@
         padding-left: 8px;
         padding-right: 8px;
     }
+
+    .slideshow .content .heading {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    .slideshow .content .heading::after {
+        bottom: -8px;
+    }
+
+    .shop-now-btn {
+        margin-top: 12px;
+    }
+
+    .slideshow .swiper-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slideshow .swiper-button::after {
+        font-size: 20px;
+    }
+
+    .slideshow .swiper-button-next {
+        right: 12px;
+    }
+
+    .slideshow .swiper-button-prev {
+        left: 12px;
+    }
+
+    .slideshow .content-middle .heading {
+        font-size: 100px;
+        margin: 20px 0;
+    }
+
+    .slideshow .content-middle .heading::before {
+        height: 50px;
+        left: -15px;
+    }
+
+    .slideshow .content-middle .sub-heading {
+        margin-bottom: 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
