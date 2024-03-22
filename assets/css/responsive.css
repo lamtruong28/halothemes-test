@@ -111,6 +111,19 @@
     .slideshow .content-middle .sub-heading {
         margin-bottom: 0;
     }
+
+    .slideshow .swiper-wrapper {
+        height: 300px !important;
+    }
+
+    .slideshow .swiper-wrapper .swiper-slide {
+        height: 300px;
+    }
+
+    .slideshow .swiper-wrapper .swiper-slide img {
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

@@ -1,6 +1,6 @@
 new Swiper(".slideshow", {
     loop: true,
-    // parallax: true,
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
