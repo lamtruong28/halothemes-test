@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./assets/css/variable.css" />
+        <link rel="stylesheet" href="./assets/css/animation.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <title>Exam Theme</title>
+    </head>
+    <body>
+        <header>
+            <marquee
+                behavior="scroll"
+                direction="left"
+                class="container-fluid top-message"
+            >
+                <p>
+                    <i class="fa-solid fa-bolt flicker-lightning"></i> SPECIAL
+                    OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR
+                    <strong>$1/MONTH</strong>
+                </p>
+            </marquee>
+            <!-- Start top nav -->
+            <div class="container">
+                <div class="top-nav__wrapper d-flex justify-content-between">
+                    <a href="/" class="logo"
+                        ><span class="first-character">e</span>lla</a
+                    >
+                    <div>
+                        <p class="freeshipping-text text-uppercase text-end">
+                            Free shipping on All Orders. No Minimum Purchase
+                        </p>
+                        <nav class="top-nav">
+                            <ul
+                                class="menu-list mb-0 d-flex justify-content-end list-unstyled"
+                            >
+                                <li
+                                    class="menu__item cart-btn d-flex align-items-center gap-2"
+                                >
+                                    <svg
+                                        width="16"
+                                        height="20"
+                                        viewBox="0 0 16 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M8 0C6.067 0 4.5 1.567 4.5 3.5V6H3C1.34315 6 0 7.34315 0 9V17C0 18.6569 1.34315 20 3 20H13C14.6569 20 16 18.6569 16 17V9C16 7.34315 14.6569 6 13 6H11.5V3.5C11.5 1.567 9.933 0 8 0ZM10.5 7V9.5H11.5V7H13C14.1046 7 15 7.89543 15 9V17C15 18.1046 14.1046 19 13 19H3C1.89543 19 1 18.1046 1 17V9C1 7.89543 1.89543 7 3 7H4.5V9.5H5.5V7H10.5ZM10.5 6V3.5C10.5 2.11929 9.38071 1 8 1C6.61929 1 5.5 2.11929 5.5 3.5V6H10.5Z"
+                                            fill="black"
+                                        />
+                                    </svg>
+                                    <span>Shopping Cart</span>
+                                    <span
+                                        class="cart__quantity d-flex justify-content-center align-items-center rounded-circle"
+                                        >0</span
+                                    >
+                                </li>
+                                <li
+                                    class="menu__item d-flex align-items-center gap-2"
+                                >
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>My Wish Lists</span>
+                                </li>
+                                <li
+                                    class="menu__item sign-in__btn d-flex align-items-center gap-2"
+                                >
+                                    <span>Sign In or Create an account</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- End top nav -->
+
+            <!-- Start menu -->
+            <div class="menu__wrapper container-fluid">
+                <nav class="container">
+                    <ul class="menu d-flex list-unstyled">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >New in</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >Trend</a
+                            >
+                        </li>
+                        <li
+                            class="menu__item has-badge"
+                            data-sticky-text="Sale"
+                            style="--sticky-bg-color: #ef6454"
+                        >
+                            <a href="#" class="menu__link text-uppercase"
+                                >Collections</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >LookBook</a
+                            >
+                        </li>
+                        <li
+                            class="menu__item has-badge"
+                            data-sticky-text="New"
+                            style="--sticky-bg-color: #06bfe2"
+                        >
+                            <a href="#" class="menu__link text-uppercase"
+                                >Demo</a
+                            >
+                        </li>
+                        <li
+                            class="menu__item has-badge"
+                            data-sticky-text="Hot"
+                            style="--sticky-bg-color: #ffbb49"
+                        >
+                            <a href="#" class="menu__link text-uppercase"
+                                >Shop instagram</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >Blog</a
+                            >
+                            <!-- Sub menu -->
+                            <ul class="sub-menu">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog Default Layout</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog with Small Image and Left
+                                        Sidebar</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog Mansory</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog Full-width</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog Post with LookBook</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link text-link"
+                                        >Blog Post with Product Widget</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >Brands</a
+                            >
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link text-uppercase"
+                                >Faqs</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End menu -->
+        </header>
+        <main>
+            <!-- Slideshow -->
+            <section class="swiper slideshow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide position-relative">
+                        <img
+                            src="./assets/images/jpeg-optimizer_slideshow1.jpg"
+                            alt="Banner 01"
+                        />
+                        <div class="container d-flex justify-content-start">
+                            <div class="content position-absolute">
+                                <h2 class="heading text-uppercase">
+                                    Cosmopolis
+                                </h2>
+                                <p>
+                                    Quisquemos sodales suscipit tortor ditaemcos
+                                    condimentum de cosmo lacus meleifend menean
+                                    diverra loremus.
+                                </p>
+                                <button class="shop-now-btn text-uppercase">
+                                    Shop now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide position-relative">
+                        <img
+                            src="./assets/images/jpeg-optimizer_slideshow2.jpg"
+                            alt="Banner 02"
+                        />
+                        <div
+                            class="content-middle position-absolute start-50 top-50 translate-middle"
+                        >
+                            <span class="sub-heading text-uppercase"
+                                >Special offers</span
+                            >
+                            <h2 class="heading text-uppercase">Sale</h2>
+                            <p class="sub-heading text-uppercase">
+                                Up to 70% off on selected items. Limited - time
+                                only
+                            </p>
+                            <button class="shop-now-btn outline text-uppercase">
+                                Shop now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide position-relative">
+                        <img
+                            src="./assets/images/jpeg-optimizer_slideshow3.jpg"
+                            alt="Banner 03"
+                        />
+                        <div class="container d-flex justify-content-end">
+                            <div class="content position-absolute">
+                                <h2 class="heading text-uppercase">Loremus</h2>
+                                <p>
+                                    Quisquemos sodales suscipit tortor ditaemcos
+                                    condimentum lacus meleifend menean diverra
+                                    lorem comodous.
+                                </p>
+                                <button class="shop-now-btn text-uppercase">
+                                    Shop the collection
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+
+            <!-- Sub banner -->
+            <section class="sub-banner container">
+                <div
+                    class="row gy-3 gx-3 gy-sm-3 gx-sm-3 justify-content-center"
+                >
+                    <div class="col col-12 col-sm-6">
+                        <div class="sub-banner__item px-sm-0">
+                            <img
+                                src="./assets/images/jpeg-optimizer_sub-banner1.jpg"
+                                alt="Sub banner 01"
+                            />
+                            <h3 class="sub-banner__title">Editor's Pick</h3>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6">
+                        <div class="sub-banner__item px-sm-0">
+                            <img
+                                src="./assets/images/jpeg-optimizer_sub-banner2.jpg"
+                                alt="Sub banner 01"
+                            />
+                            <h3 class="sub-banner__title">Shoes</h3>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6">
+                        <div class="sub-banner__item px-sm-0">
+                            <img
+                                src="./assets/images/jpeg-optimizer_sub-banner3.jpg"
+                                alt="Sub banner 01"
+                            />
+                            <h3 class="sub-banner__title">Accessories</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product -->
+            <section class="product container">
+                <div class="row align-items-center">
+                    <div class="col col-4 col-lg-4">
+                        <div class="spacing">
+                            <hr class="line" />
+                        </div>
+                    </div>
+                    <div class="col col-4 col-lg-4">
+                        <h2
+                            class="heading fw-semibold text-uppercase text-center mb-0"
+                        >
+                            New Arrivals
+                        </h2>
+                    </div>
+                    <div class="col col-4 col-lg-4">
+                        <div class="spacing">
+                            <hr class="line" />
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-2">
+                    <a
+                        href="#"
+                        class="text-decoration-underline fs-small view-all-link"
+                        >View All</a
+                    >
+                </p>
+                <div class="product-list">
+                    <div class="row justify-content-center">
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                            <article class="product__card card border-0">
+                                <div class="position-relative">
+                                    <div
+                                        class="wrap__img position-relative overflow-hidden"
+                                    >
+                                        <img
+                                            src="./assets/images/jpeg-optimizer_product1.jpg"
+                                            class="card-img-top"
+                                            alt="Image product"
+                                        />
+
+                                        <div
+                                            class="wrap-btn p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                        >
+                                            <button
+                                                class="card__button add-to-cart-btn w-100 text-uppercase fw-semibold"
+                                            >
+                                                Add to cart
+                                            </button>
+                                        </div>
+
+                                        <form
+                                            class="form-sizes p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                            action=""
+                                            name="sizes"
+                                        >
+                                            <span
+                                                class="position-absolute close-submit-btn"
+                                                ><i
+                                                    class="fa-solid fa-xmark"
+                                                ></i
+                                            ></span>
+                                            <p
+                                                class="mb-0 text-center fs-small"
+                                            >
+                                                Size:
+                                                <span
+                                                    class="selected-size text-uppercase"
+                                                    >XS</span
+                                                >
+                                            </p>
+                                            <ul
+                                                class="sizes d-flex justify-content-center my-3"
+                                            >
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xs"
+                                                        hidden
+                                                        checked
+                                                    />
+                                                    <label>XS</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="s"
+                                                        hidden
+                                                    />
+                                                    <label>S</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="m"
+                                                        hidden
+                                                    />
+                                                    <label>M</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="l"
+                                                        hidden
+                                                    />
+                                                    <label>L</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xl"
+                                                        hidden
+                                                    />
+                                                    <label>XL</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="2x"
+                                                        hidden
+                                                    />
+                                                    <label>2X</label>
+                                                </li>
+                                            </ul>
+                                            <button
+                                                class="card__button submit-add-to-cart w-100 text-uppercase fw-semibold"
+                                            >
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="card__icon-wrap">
+                                        <button
+                                            class="card__icon d-flex justify-content-center align-items-center"
+                                            data-title="Add to wishlist"
+                                        >
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <button
+                                            class="card__icon card__icon--view d-flex justify-content-center align-items-center"
+                                            data-title="View product"
+                                        >
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center px-1">
+                                    <span
+                                        class="auth card-subtitle text-muted fs-small text-uppercase"
+                                        >Sodling</span
+                                    >
+                                    <p class="card-title fs-small">
+                                        Naminos Dementus A Milance - Pattern.
+                                    </p>
+                                    <p class="fw-semibold price">
+                                        $86.00 - $99.00
+                                    </p>
+                                    <ul
+                                        class="variant d-flex justify-content-center"
+                                    >
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #4b6cc0"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #494949"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #e8e8e8"
+                                        ></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                            <article class="product__card card border-0">
+                                <div class="position-relative">
+                                    <div
+                                        class="wrap__img position-relative overflow-hidden"
+                                    >
+                                        <img
+                                            src="./assets/images/jpeg-optimizer_product2.jpg"
+                                            class="card-img-top"
+                                            alt="Image product"
+                                        />
+
+                                        <div
+                                            class="wrap-btn p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                        >
+                                            <button
+                                                class="card__button add-to-cart-btn w-100 text-uppercase fw-semibold"
+                                            >
+                                                Add to cart
+                                            </button>
+                                        </div>
+
+                                        <form
+                                            class="form-sizes p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                            action=""
+                                            name="sizes"
+                                        >
+                                            <span
+                                                class="position-absolute close-submit-btn"
+                                                ><i
+                                                    class="fa-solid fa-xmark"
+                                                ></i
+                                            ></span>
+                                            <p
+                                                class="mb-0 text-center fs-small"
+                                            >
+                                                Size:
+                                                <span
+                                                    class="selected-size text-uppercase"
+                                                    >XS</span
+                                                >
+                                            </p>
+                                            <ul
+                                                class="sizes d-flex justify-content-center my-3"
+                                            >
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xs"
+                                                        hidden
+                                                        checked
+                                                    />
+                                                    <label>XS</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="s"
+                                                        hidden
+                                                    />
+                                                    <label>S</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="m"
+                                                        hidden
+                                                    />
+                                                    <label>M</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="l"
+                                                        hidden
+                                                    />
+                                                    <label>L</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xl"
+                                                        hidden
+                                                    />
+                                                    <label>XL</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="2x"
+                                                        hidden
+                                                    />
+                                                    <label>2X</label>
+                                                </li>
+                                            </ul>
+                                            <button
+                                                class="card__button submit-add-to-cart w-100 text-uppercase fw-semibold"
+                                            >
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="card__icon-wrap">
+                                        <button
+                                            class="card__icon d-flex justify-content-center align-items-center"
+                                            data-title="Add to wishlist"
+                                        >
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <button
+                                            class="card__icon card__icon--view d-flex justify-content-center align-items-center"
+                                            data-title="View product"
+                                        >
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center px-1">
+                                    <span
+                                        class="auth card-subtitle text-muted fs-small text-uppercase"
+                                        >Tomorrow</span
+                                    >
+                                    <p class="card-title fs-small">
+                                        Dinterdum Pretium Condimento - Pattern
+                                    </p>
+                                    <p class="fw-semibold price">
+                                        $139.00 - $189.00
+                                    </p>
+                                    <ul
+                                        class="variant d-flex justify-content-center"
+                                    >
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #000000"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #e8e8e8"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #4b6cc0"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #13c89c"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #fff100"
+                                        ></li>
+                                        <li
+                                            class="variant__item more text-muted fs-small"
+                                        >
+                                            +1
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                            <article class="product__card card border-0">
+                                <div class="position-relative">
+                                    <div
+                                        class="wrap__img position-relative overflow-hidden"
+                                    >
+                                        <img
+                                            src="./assets/images/jpeg-optimizer_product3.jpg"
+                                            class="card-img-top"
+                                            alt="Image product"
+                                        />
+
+                                        <div
+                                            class="wrap-btn p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                        >
+                                            <button
+                                                class="card__button add-to-cart-btn w-100 text-uppercase fw-semibold"
+                                            >
+                                                Add to cart
+                                            </button>
+                                        </div>
+
+                                        <form
+                                            class="form-sizes p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                            action=""
+                                            name="sizes"
+                                        >
+                                            <span
+                                                class="position-absolute close-submit-btn"
+                                                ><i
+                                                    class="fa-solid fa-xmark"
+                                                ></i
+                                            ></span>
+                                            <p
+                                                class="mb-0 text-center fs-small"
+                                            >
+                                                Size:
+                                                <span
+                                                    class="selected-size text-uppercase"
+                                                    >XS</span
+                                                >
+                                            </p>
+                                            <ul
+                                                class="sizes d-flex justify-content-center my-3"
+                                            >
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xs"
+                                                        hidden
+                                                        checked
+                                                    />
+                                                    <label>XS</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="s"
+                                                        hidden
+                                                    />
+                                                    <label>S</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="m"
+                                                        hidden
+                                                    />
+                                                    <label>M</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="l"
+                                                        hidden
+                                                    />
+                                                    <label>L</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xl"
+                                                        hidden
+                                                    />
+                                                    <label>XL</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="2x"
+                                                        hidden
+                                                    />
+                                                    <label>2X</label>
+                                                </li>
+                                            </ul>
+                                            <button
+                                                class="card__button submit-add-to-cart w-100 text-uppercase fw-semibold"
+                                            >
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="card__icon-wrap">
+                                        <button
+                                            class="card__icon d-flex justify-content-center align-items-center"
+                                            data-title="Add to wishlist"
+                                        >
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <button
+                                            class="card__icon card__icon--view d-flex justify-content-center align-items-center"
+                                            data-title="View product"
+                                        >
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center px-1">
+                                    <span
+                                        class="auth card-subtitle text-muted fs-small text-uppercase"
+                                        >Paul Smith</span
+                                    >
+                                    <p class="card-title fs-small">
+                                        Magnis Darturien Metro Lacinis - Black
+                                    </p>
+                                    <p class="fw-semibold price">$86.00</p>
+                                    <ul
+                                        class="variant d-flex justify-content-center"
+                                    >
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #ffffff"
+                                        ></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                            <article class="product__card card border-0">
+                                <div class="position-relative">
+                                    <div
+                                        class="wrap__img position-relative overflow-hidden"
+                                    >
+                                        <img
+                                            src="./assets/images/jpeg-optimizer_product4.jpg"
+                                            class="card-img-top"
+                                            alt="Image product"
+                                        />
+
+                                        <div
+                                            class="wrap-btn p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                        >
+                                            <button
+                                                class="card__button add-to-cart-btn w-100 text-uppercase fw-semibold"
+                                            >
+                                                Add to cart
+                                            </button>
+                                        </div>
+
+                                        <form
+                                            class="form-sizes p-3 position-absolute bottom-0 start-0 bg-white w-100"
+                                            action=""
+                                            name="sizes"
+                                        >
+                                            <span
+                                                class="position-absolute close-submit-btn"
+                                                ><i
+                                                    class="fa-solid fa-xmark"
+                                                ></i
+                                            ></span>
+                                            <p
+                                                class="mb-0 text-center fs-small"
+                                            >
+                                                Size:
+                                                <span
+                                                    class="selected-size text-uppercase"
+                                                    >XS</span
+                                                >
+                                            </p>
+                                            <ul
+                                                class="sizes d-flex justify-content-center my-3"
+                                            >
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xs"
+                                                        hidden
+                                                        checked
+                                                    />
+                                                    <label>XS</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="s"
+                                                        hidden
+                                                    />
+                                                    <label>S</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="m"
+                                                        hidden
+                                                    />
+                                                    <label>M</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="l"
+                                                        hidden
+                                                    />
+                                                    <label>L</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="xl"
+                                                        hidden
+                                                    />
+                                                    <label>XL</label>
+                                                </li>
+                                                <li class="size__option">
+                                                    <input
+                                                        type="radio"
+                                                        name="size"
+                                                        value="2x"
+                                                        hidden
+                                                    />
+                                                    <label>2X</label>
+                                                </li>
+                                            </ul>
+                                            <button
+                                                class="card__button submit-add-to-cart w-100 text-uppercase fw-semibold"
+                                            >
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="card__icon-wrap">
+                                        <button
+                                            class="card__icon d-flex justify-content-center align-items-center"
+                                            data-title="Add to wishlist"
+                                        >
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <button
+                                            class="card__icon card__icon--view d-flex justify-content-center align-items-center"
+                                            data-title="View product"
+                                        >
+                                            <i class="fa-regular fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center px-1">
+                                    <span
+                                        class="auth card-subtitle text-muted fs-small text-uppercase"
+                                        >Donatello</span
+                                    >
+                                    <p class="card-title fs-small">
+                                        Loremous Saliduar A Cosmopolito -
+                                        Pattern
+                                    </p>
+                                    <p class="fw-semibold price">
+                                        $86.00 - $99.00
+                                    </p>
+                                    <ul
+                                        class="variant d-flex justify-content-center"
+                                    >
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #494949"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #e8e8e8"
+                                        ></li>
+                                        <li
+                                            class="variant__item"
+                                            style="--variant-color: #13c89c"
+                                        ></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <button class="btn-show-more text-uppercase fw-semibold">
+                        Show more
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Instagram -->
+        <section class="instagram container-fluid">
+            <div class="container text-center">
+                <h2 class="heading text-uppercase">
+                    <i
+                        class="fa-brands fa-instagram"
+                        style="font-size: 22px"
+                    ></i>
+                    <span class="ms-2"> #Ella On Instagram</span>
+                </h2>
+                <p class="sub-heading fs-small">
+                    Phasellus lorem malesuada ligula pulvinar commodo maecenas
+                </p>
+
+                <div class="position-relative">
+                    <div class="swiper slideshow-instagram">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram1.jpg"
+                                    alt="Instagram 01"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram2.jpg"
+                                    alt="Instagram 02"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram3.jpg"
+                                    alt="Instagram 03"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram4.jpg"
+                                    alt="Instagram 04"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram5.jpg"
+                                    alt="Instagram 05"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_instagram3.jpg"
+                                    alt="Instagram 03"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-next"></div>
+                    <div class="swiper-button swiper-button-prev"></div>
+                </div>
+                <button class="btn-view-gallery text-white text-uppercase">
+                    View Gallery
+                </button>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-7">
+                        <div class="row">
+                            <div class="col col-lg-4">
+                                <p class="text-uppercase fw-semibold">Shop</p>
+                                <ul class="info">
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >New In</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#">Women</a>
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#">Men</a>
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#">Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Bags & Accessories</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Top Brands</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Sale & Special Offers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >LookBook</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col col-lg-4">
+                                <p class="text-uppercase fw-semibold">
+                                    Information
+                                </p>
+                                <ul class="info">
+                                    <li>
+                                        <a class="info__link" href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Customer Service</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Reward Program</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Shipping & Returns</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Privacy Policy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Terms & Conditions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col col-lg-4">
+                                <p class="text-uppercase fw-semibold">
+                                    Customer Service
+                                </p>
+                                <ul class="info">
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Search Terms</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Advanced Search</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Orders and Returns</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Contact Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Theme FAQs</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Consultant</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="info__link" href="#"
+                                            >Store Locations</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-5">
+                        <p class="text-uppercase fw-semibold">
+                            Newsletter Sign Up
+                        </p>
+                        <span class="sub-text"
+                            >Sign up for exclusive updates, new arrivals &
+                            insider only discount</span
+                        >
+                        <form class="d-flex gap-2 mt-3 mb-4" action="/">
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                class="input__email-address flex-fill"
+                                required
+                            />
+                            <input
+                                type="submit"
+                                value="submit"
+                                class="btn-submit fw-semibold text-uppercase"
+                            />
+                        </form>
+
+                        <ul class="social-list d-flex">
+                            <li>
+                                <a class="social__item--link" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social__item--link" href="#"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a class="social__item--link" href="#"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a class="social__item--link" href="#"
+                                    ><i class="fa-brands fa-pinterest-p"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a class="social__item--link" href="#"
+                                    ><i class="fa-brands fa-snapchat"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__copyright row">
+                    <div class="col col-lg-4">
+                        <p class="fs-small">
+                            &copy; 2014 Ella Demo. All Rights Reserved. Powered
+                            by Shopify.
+                        </p>
+                        <p class="fs-small mb-0">
+                            Shopify Themes by HaloThemes.com
+                        </p>
+                    </div>
+                    <div class="col col-lg-4"></div>
+                    <div class="col col-lg-4">
+                        <ul class="payment-method d-flex justify-content-end">
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method1.jpg"
+                                    alt="Payment method 01"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method2.jpg"
+                                    alt="Payment method 02"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method3.jpg"
+                                    alt="Payment method 03"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method4.jpg"
+                                    alt="Payment method 04"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method5.jpg"
+                                    alt="Payment method 05"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method6.jpg"
+                                    alt="Payment method 06"
+                                />
+                            </li>
+                            <li class="payment-method__item">
+                                <img
+                                    src="./assets/images/jpeg-optimizer_payment-method7.jpg"
+                                    alt="Payment method 07"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="overlay"></div>
+
+        <!-- Login -->
+        <aside class="login__wrap">
+            <span class="btn-close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h3 class="heading">Sign In</h3>
+            <form name="login" action="">
+                <div class="field__wrap d-flex flex-column">
+                    <label for="email"
+                        >Email Address <span class="text-danger">*</span></label
+                    >
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="field__wrap d-flex flex-column">
+                    <label for="password"
+                        >Password <span class="text-danger">*</span></label
+                    >
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                    />
+                </div>
+                <input
+                    type="submit"
+                    value="Login"
+                    class="login-btn button button-primary"
+                />
+                <p class="text-center fs-small my-4">
+                    <a href="#" class="text-link">Forgot your password?</a>
+                </p>
+            </form>
+            <button class="button button-outline w-100">Create account</button>
+        </aside>
+
+        <!-- Cart section -->
+        <aside class="cart__wrap">
+            <span class="btn-close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <h3 class="heading">Shopping Cart</h3>
+            <p class="quantity fs-small text-muted mt-3 mb-4">3 items</p>
+            <p class="freeship-policy fs-small text-muted">
+                Free shipping for all orders over $800.00!
+            </p>
+            <p class="text-center text-muted fs-small">Your cart is empty</p>
+            <button class="checkout-btn button button-primary w-100">
+                Checkout
+            </button>
+        </aside>
+
+        <div class="floating__wrapper">
+            <ul class="float-action">
+                <li
+                    class="float-action__item history-view"
+                    title="Recently viewed"
+                >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div class="recently-viewed">
+                        <h4 class="heading text-uppercase text-center">
+                            Recently viewed
+                        </h4>
+                        <ul class="rv__list d-flex flex-column">
+                            <li class="rv__item d-flex">
+                                <div class="content flex-fill">
+                                    <h5 class="author">Mango</h5>
+                                    <span class="desc text-link">
+                                        Finibus Luctus Nisiteti Long Sleeves -
+                                        Grey
+                                    </span>
+                                    <strong class="price">$300.00</strong>
+                                </div>
+                                <img
+                                    class="flex-shrink-0"
+                                    src="./assets/images/jpeg-optimizer_recently-viewed1.jpg"
+                                    alt="Recently viewed"
+                                />
+                            </li>
+                            <li class="rv__item d-flex">
+                                <div class="content flex-fill">
+                                    <h5 class="author">Mango</h5>
+                                    <span class="desc text-link">
+                                        Finibus Luctus Nisiteti Long Sleeves -
+                                        Grey
+                                    </span>
+                                    <strong class="price">$300.00</strong>
+                                </div>
+                                <img
+                                    class="flex-shrink-0"
+                                    src="./assets/images/jpeg-optimizer_recently-viewed2.jpg"
+                                    alt="Recently viewed"
+                                />
+                            </li>
+                            <li class="rv__item d-flex">
+                                <div class="content flex-fill">
+                                    <h5 class="author">Mango</h5>
+                                    <span class="desc text-link">
+                                        Finibus Luctus Nisiteti Long Sleeves -
+                                        Grey
+                                    </span>
+                                    <strong class="price">$300.00</strong>
+                                </div>
+                                <img
+                                    class="flex-shrink-0"
+                                    src="./assets/images/jpeg-optimizer_recently-viewed3.jpg"
+                                    alt="Recently viewed"
+                                />
+                            </li>
+                        </ul>
+                        <div class="controls">
+                            <div class="control__wrap d-flex">
+                                <span
+                                    class="control-btn flex-fill d-flex justify-content-center align-items-center"
+                                >
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span
+                                    class="control-btn flex-fill d-flex justify-content-center align-items-center"
+                                >
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="float-action__item" title="Share">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </li>
+                <li class="float-action__item" title="Move to top">
+                    <a
+                        href="#"
+                        class="d-flex justify-content-center align-items-center w-100 h-100"
+                    >
+                        <i class="fa-solid fa-arrow-up-long"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./assets/js/slideshow.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+:root {
+    --brown-color: #b05d5d;
+    --yellow-color: #ffd500;
+    --black-color: #232323;
+    --pink-light-color: #ffe8e8;
+    --text-color: #232323;
+    --white-color: #ffffff;
+    --white-color-grb: 255, 255, 255;
+
+    --primary-font-family: "Poppins", sans-serif;
+    --secondary-font-family: "Overpass", sans-serif;
+}

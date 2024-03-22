@@ -1,0 +1,20 @@
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes flicker {
+    0% {
+        color: var(--brown-color);
+    }
+    50% {
+        color: var(--yellow-color);
+    }
+    100% {
+        color: var(--brown-color);
+    }
+}
