@@ -63,6 +63,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .btn-submit {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
