@@ -1,5 +1,51 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Mobile and Tablets */
+@media (max-width: 992px) {
+    .menu {
+        display: block !important;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 320px;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        background-color: var(--black-color);
+        padding: 44px 32px 20px;
+        z-index: 999;
+        transition: all linear 0.2s;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu__button {
+        width: 35px;
+        height: 35px;
+        transition: all linear 0.2s;
+    }
+
+    .menu__button:hover {
+        background-color: #333333;
+    }
+
+    .menu__button > i {
+        font-size: 16px;
+    }
+
+    .menu > .menu__item.has-badge::before {
+        top: 50%;
+        transform: translateY(-50%);
+        min-width: 40px;
+        text-align: center;
+    }
+
+    .menu > .menu__item.has-badge::after {
+        display: none;
+    }
 }
 
 /*  Medium devices (tablets, 768px and up) */

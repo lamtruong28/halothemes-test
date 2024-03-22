@@ -79,7 +79,9 @@
                                             fill="black"
                                         />
                                     </svg>
-                                    <span>Shopping Cart</span>
+                                    <span class="d-none d-md-block"
+                                        >Shopping Cart</span
+                                    >
                                     <span
                                         class="cart__quantity d-flex justify-content-center align-items-center rounded-circle"
                                         >0</span
@@ -89,7 +91,9 @@
                                     class="menu__item d-flex align-items-center gap-2"
                                 >
                                     <i class="fa-regular fa-heart"></i>
-                                    <span>My Wish Lists</span>
+                                    <span class="d-none d-md-block"
+                                        >My Wish Lists</span
+                                    >
                                 </li>
                                 <li
                                     class="menu__item sign-in__btn d-flex align-items-center gap-2"
@@ -105,101 +109,112 @@
 
             <!-- Start menu -->
             <div class="menu__wrapper container-fluid">
-                <nav class="container">
-                    <ul class="menu d-flex list-unstyled">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >New in</a
+                <div class="container">
+                    <span
+                        class="menu__button btn-open-menu d-inline-flex d-lg-none text-white justify-content-center align-items-center rounded-circle"
+                        ><i class="fa-solid fa-bars"></i
+                    ></span>
+                    <nav>
+                        <ul class="menu d-flex">
+                            <span
+                                class="btn-close-modal btn-close-menu text-white"
                             >
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >Trend</a
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >New in</a
+                                >
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Trend</a
+                                >
+                            </li>
+                            <li
+                                class="menu__item has-badge"
+                                data-sticky-text="Sale"
+                                style="--sticky-bg-color: #ef6454"
                             >
-                        </li>
-                        <li
-                            class="menu__item has-badge"
-                            data-sticky-text="Sale"
-                            style="--sticky-bg-color: #ef6454"
-                        >
-                            <a href="#" class="menu__link text-uppercase"
-                                >Collections</a
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Collections</a
+                                >
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >LookBook</a
+                                >
+                            </li>
+                            <li
+                                class="menu__item has-badge"
+                                data-sticky-text="New"
+                                style="--sticky-bg-color: #06bfe2"
                             >
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >LookBook</a
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Demo</a
+                                >
+                            </li>
+                            <li
+                                class="menu__item has-badge"
+                                data-sticky-text="Hot"
+                                style="--sticky-bg-color: #ffbb49"
                             >
-                        </li>
-                        <li
-                            class="menu__item has-badge"
-                            data-sticky-text="New"
-                            style="--sticky-bg-color: #06bfe2"
-                        >
-                            <a href="#" class="menu__link text-uppercase"
-                                >Demo</a
-                            >
-                        </li>
-                        <li
-                            class="menu__item has-badge"
-                            data-sticky-text="Hot"
-                            style="--sticky-bg-color: #ffbb49"
-                        >
-                            <a href="#" class="menu__link text-uppercase"
-                                >Shop instagram</a
-                            >
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >Blog</a
-                            >
-                            <!-- Sub menu -->
-                            <ul class="sub-menu">
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog Default Layout</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog with Small Image and Left
-                                        Sidebar</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog Mansory</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog Full-width</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog Post with LookBook</a
-                                    >
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link text-link"
-                                        >Blog Post with Product Widget</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >Brands</a
-                            >
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-uppercase"
-                                >Faqs</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Shop instagram</a
+                                >
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Blog</a
+                                >
+                                <!-- Sub menu -->
+                                <ul class="sub-menu">
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog Default Layout</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog with Small Image and Left
+                                            Sidebar</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog Mansory</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog Full-width</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog Post with LookBook</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link text-link"
+                                            >Blog Post with Product Widget</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Brands</a
+                                >
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-uppercase"
+                                    >Faqs</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <!-- End menu -->
         </header>
@@ -338,7 +353,7 @@
                     >
                 </p>
                 <div class="product-list">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center gy-3">
                         <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
                             <article class="product__card card border-0">
                                 <div class="position-relative">
@@ -1217,7 +1232,7 @@
                 </div>
 
                 <div class="footer__copyright row">
-                    <div class="col col-12 col-md-6">
+                    <div class="col col-12 col-md-6 col-lg-4">
                         <p class="fs-small">
                             &copy; 2014 Ella Demo. All Rights Reserved. Powered
                             by Shopify.
@@ -1226,10 +1241,10 @@
                             Shopify Themes by HaloThemes.com
                         </p>
                     </div>
-                    <div class="col d-none d-lg-block col-md-4"></div>
-                    <div class="col col-12 mt-3 mt-md-0 col-md-6">
+                    <div class="col d-none d-lg-block col-lg-4"></div>
+                    <div class="col col-12 mt-3 mt-md-0 col-md-6 col-lg-4">
                         <ul
-                            class="payment-method d-flex justify-content-end justify-content-md-center"
+                            class="payment-method d-flex justify-content-center justify-content-md-end"
                         >
                             <li class="payment-method__item">
                                 <img

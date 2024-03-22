@@ -5,6 +5,10 @@ const loginSection = document.querySelector(".login__wrap");
 const cart = document.querySelector(".cart__wrap");
 const closeModalButtons = document.querySelectorAll(".btn-close-modal");
 
+const openMenuButton = document.querySelector(".btn-open-menu");
+const closeMenuButton = document.querySelector(".btn-close-menu");
+const menu = document.querySelector(".menu");
+
 const products = document.querySelectorAll(".product .product__card");
 const addToCartButtons = document.querySelectorAll(".product .add-to-cart-btn");
 const formSizes = document.querySelectorAll(".form-sizes");
@@ -13,6 +17,16 @@ const selectedSizes = document.querySelectorAll(".selected-size");
 signInButton.onclick = () => {
     modal.classList.add("active");
     loginSection.classList.add("active");
+};
+
+openMenuButton.onclick = () => {
+    modal.classList.add("active");
+    menu.classList.add("active");
+};
+
+closeMenuButton.onclick = () => {
+    modal.classList.remove("active");
+    menu.classList.remove("active");
 };
 
 cartButton.onclick = () => {
@@ -24,6 +38,7 @@ modal.onclick = () => {
     modal.classList.remove("active");
     loginSection.classList.remove("active");
     cart.classList.remove("active");
+    menu.classList.remove("active");
 };
 
 for (const button of closeModalButtons) {
