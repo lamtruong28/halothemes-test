@@ -25,6 +25,7 @@
     .menu__button {
         width: 35px;
         height: 35px;
+        margin-left: -12px;
         transition: all linear 0.2s;
     }
 
@@ -45,6 +46,15 @@
 
     .menu > .menu__item.has-badge::after {
         display: none;
+    }
+
+    .menu > .menu__item > .menu__link {
+        display: inline-block;
+    }
+
+    .sub-menu {
+        left: 0;
+        width: 100%;
     }
 
     .floating__wrapper {
@@ -127,7 +137,14 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+    .slideshow .swiper-button-next {
+        right: 50px;
+    }
+
+    .slideshow .swiper-button-prev {
+        left: 50px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

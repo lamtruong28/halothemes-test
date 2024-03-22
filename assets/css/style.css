@@ -220,7 +220,6 @@ body {
     top: calc(100% + 8px);
     left: -20px;
     width: 220px;
-    max-width: 100%;
     padding: 12px 20px;
     background-color: var(--white-color);
     opacity: 0;
