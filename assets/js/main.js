@@ -78,3 +78,5 @@ for (const [index, product] of products.entries()) {
         formSizes[index].classList.remove("active");
     });
 }
+
+AOS.init();
